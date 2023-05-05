@@ -7,7 +7,7 @@
     usd: 1,
     uru: 37,
     brl: 5.01,
-    eur: 0.91
+    eur: 0.91    
   };
   
   let continuar = true;
