@@ -1,7 +1,5 @@
   
-/*  */
-
-
+/* Este es un conversor sencillo de monedas frecuentes en una casa de cambio local- la unidad de referencia es el dolar*/
   let tiposDeCambio = {
     ars: 467,
     usd: 1,
@@ -11,6 +9,7 @@
   };
   
   let continuar = true;
+  
   
   while (continuar) {
     let moneda1 = prompt("¿Qué moneda deseas convertir? (ars, usd, uru, brl, eur)");
@@ -25,10 +24,8 @@
       alert(`Esta moneda ${moneda2} no es válida.`);
     } else {
       let resultado = cantidad * (tiposDeCambio[moneda2] / tiposDeCambio[moneda1]);
-      alert(`${cantidad} ${moneda1} equivalen a  ${resultado} ${moneda2}`);
+      alert(`${cantidad} ${moneda1} equivalen a ${resultado} ${moneda2}`);
     }
   
     continuar = confirm("¿Deseas realizar otra conversión?");
-  }
-
-  
+  } 
